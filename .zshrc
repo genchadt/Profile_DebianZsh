@@ -48,6 +48,9 @@ fi
 # 3. ALIASES: SYSTEM & MAINTENANCE
 # ==========================================
 
+# --- Dotfiles Version Control ---
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 # --- Shell Management ---
 alias cls='clear'
 alias reload-zsh='source ~/.zshrc && echo "ZSH config reloaded."'
@@ -76,7 +79,6 @@ alias bd='cd $OLDPWD'
 alias z..='zoxide query ..'
 
 # --- Bookmarks ---
-alias config='cd ~/.config'
 alias desk='cd ~/Desktop'
 alias docs='cd ~/Documents'
 alias dl='cd ~/Downloads'
@@ -98,6 +100,8 @@ fi
 # ==========================================
 # 5. ALIASES: NETWORK & DIAGNOSTICS
 # ==========================================
+
+alias checksmtp='$HOME/bin/checksmtp.sh'
 
 # --- Core Networking ---
 alias myip='whatsmyip'
