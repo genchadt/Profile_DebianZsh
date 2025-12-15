@@ -58,7 +58,8 @@ alias ep='$EDITOR ~/.zshrc'
 
 # --- Hardware & Utilities ---
 # Relies on custom script in /bin
-alias format-usb='sudo $HOME/bin/format32.sh'
+alias formatusb='sudo $HOME/bin/formatusb.sh'
+alias format-usb='sudo $HOME/bin/formatusb.sh'
 
 # --- Process Management ---
 alias p='ps aux | grep -v grep'                  # Quick search
